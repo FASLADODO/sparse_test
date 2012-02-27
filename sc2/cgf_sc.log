@@ -1,0 +1,1529 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=mex 2011.5.9)  10 FEB 2012 15:58
+entering extended mode
+ %&-line parsing enabled.
+**cgf_sc.c -o cgf_sc2
+(./cgf_sc.c
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+! You can't use `macro parameter character #' in horizontal mode.
+l.4 #
+     include <stdio.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.5 #
+     include <math.h>
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.6 #
+     include "mex.h"
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.8 #
+     define sgn(x) (x>0 ? 1 : (x<0 ? -1 : 0))
+? 
+! Misplaced alignment tab character &.
+l.13 /* Input &
+                Output Arguments */
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.15 #
+      define	A_IN		prhs[0]	/* basis matrix */
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.15 #define	A_
+               IN		prhs[0]	/* basis matrix */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.16 #
+      define	X_IN		prhs[1]	/* data vectors */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.17 #
+      define	S_IN		prhs[2]	/* initial guess for S */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.18 #
+      define	SPARSITY_IN		prhs[3]	/* initial guess for S */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.19 #
+      define	LAMBDA_IN	prhs[4]	/* precision */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.20 #
+      define BETA_IN		prhs[5]	/* prior steepness */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.21 #
+      define SIGMA_IN        prhs[6] /* scaling parameter for prior */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.22 #
+      define	TOL_IN		prhs[7]	/* tolerance */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.23 #
+      define MAXITER_IN      prhs[8] /* maximum iterations for dfrpmin */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.24 #
+      define	OUTFLAG_IN	prhs[9]	/* output flag */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.25 #
+      define	NUMFLAG_IN	prhs[10]	/* pattern number output flag */
+? 
+! You can't use `macro parameter character #' in math mode.
+l.26 #
+      define EPSILON_IN	prhs[11]	/* huber function epsilon */
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.27 
+     
+? 
+
+Overfull \hbox (29.58353pt too wide) in paragraph at lines 15--27
+[]\tenrm define A$[]\teni Nprhs\tenrm [0]\teni = \tensy ^^C \teni basismatrix \
+tensy ^^C \teni =defineX[]Nprhs\tenrm [1]\teni = \tensy ^^C \teni datavectors \
+tensy ^^C \teni =defineS[]Nprhs\tenrm [2]\teni = \tensy ^^C \teni initialguessf
+orS \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm e
+.\tenrm ^^L (ligature fi)
+.\tenrm n
+.etc.
+
+
+Overfull \hbox (60.15393pt too wide) in paragraph at lines 15--27
+\teni =defineSPARSITY[]Nprhs\tenrm [3]\teni = \tensy ^^C \teni initialguessforS
+ \tensy ^^C \teni =defineLAMBDA[]Nprhs\tenrm [4]\teni = \tensy ^^C \teni precis
+ion \tensy ^^C \teni =defineBETA[]Nprhs\tenrm [5]\teni = \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni =
+.\teni d
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+
+Overfull \hbox (8.57231pt too wide) in paragraph at lines 15--27
+\teni priorsteepness \tensy ^^C \teni =defineSIGMA[]Nprhs\tenrm [6]\teni = \ten
+sy ^^C \teni scalingparameterforprior \tensy ^^C \teni =defineTOL[]Nprhs\tenrm 
+[7]\teni = \tensy ^^C \teni tolerance \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni p
+.\teni r
+.\kern0.27779
+.\teni i
+.\teni o
+.etc.
+
+
+Overfull \hbox (19.74255pt too wide) in paragraph at lines 15--27
+\teni =defineMAXITER[]Nprhs\tenrm [8]\teni = \tensy ^^C \teni maximumiterations
+fordfrpmin \tensy ^^C \teni =defineOUTFLAG[]Nprhs\tenrm [9]\teni = \tensy ^^C \
+teni outputflag \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni =
+.\teni d
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+
+Overfull \hbox (49.77567pt too wide) in paragraph at lines 15--27
+\teni =defineNUMFLAG[]Nprhs\tenrm [10]\teni = \tensy ^^C \teni patternnumberout
+putflag \tensy ^^C \teni =defineEPSILON[]Nprhs\tenrm [11]\teni = \tensy ^^C \te
+ni huberfunctionepsilon \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\teni =
+.\teni d
+.\teni e
+.\teni f
+.\kern1.0764
+.etc.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.28 #
+      define	S_OUT           plhs[0]	/* basis coeffs for each data vector */
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.28 #define	S_
+               OUT           plhs[0]	/* basis coeffs for each data vector */
+? r
+OK, entering \nonstopmode...
+! You can't use `macro parameter character #' in math mode.
+l.29 #
+      define NITS_OUT        plhs[1] /* total iterations done by cg */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.30 #
+      define NF_OUT          plhs[2] /* total P(s|x,A) calcs */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.31 #
+      define NG_OUT          plhs[3] /* total d/ds P(s|x,A) calcs */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (18.4788pt too wide) in paragraph at lines 28--32
+[]\tenrm define S$[]\teni UTplhs\tenrm [0]\teni = \tensy ^^C \teni basiscoeffsf
+oreachdatavector \tensy ^^C \teni =defineNITS[]UTplhs\tenrm [1]\teni = \tensy ^
+^C \teni totaliterationsdonebycg \tensy ^^C|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm e
+.\tenrm ^^L (ligature fi)
+.\tenrm n
+.etc.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.39 #
+      define A_(i,j)		A[(i) + (j)*L]	/* A is L x M */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.39 #define A_
+               (i,j)		A[(i) + (j)*L]	/* A is L x M */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.40 #
+      define X_(i,n)		X[(i) + (n)*L]	/* X is L x npats */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.41 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.42 #
+      define Sout_(i,n)	Sout[(i) + (n)*M]	/* S is M x npats */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.42 #define Sout_
+                  (i,n)	Sout[(i) + (n)*M]	/* S is M x npats */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.43 #
+      define Sin_(i,n)	Sin[(i) + (n)*M]	/* S is M x npats */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.44 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.45 #
+      define AtA_(i,j)	AtA[(i) + (j)*M]	/* AtA is M x M */
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.45 #define AtA_
+                 (i,j)	AtA[(i) + (j)*M]	/* AtA is M x M */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.46 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.52 static double lambda;           /* 1/noise_
+                                                var */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.56 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.67 #
+      define SP_LOG			0
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.67 #define SP_
+                LOG			0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.68 #
+      define SP_HUBER_L1		1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.69 #
+      define SP_EPS_L1		2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.72 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (3.16171pt too wide) in paragraph at lines 67--72
+[]\tenrm define SP$[]\teni OG\tenrm 0\teni defineSP[]UBER[]\tenrm 11\teni defin
+eSP[]PS[]\tenrm 12\teni staticintg[]parsity[]unc\tenrm ; \teni staticdoubleg[]p
+silon\tenrm ; \teni = \tensy ^^C|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm e
+.\tenrm ^^L (ligature fi)
+.\tenrm n
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.73 static void init_
+                      global_arrays()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.77 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.77 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.93             AtA_
+                     (i, j) = sum;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.94         }
+              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.95     }
+          
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.96 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.97 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.98 static void free_
+                      global_arrays()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.100 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.100 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.110 float init_
+                 f1dim(s1, d1)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.117 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.117 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (74.95436pt too wide) in paragraph at lines 110--117
+[]\tenrm float init$[]1\teni dim\tenrm (\teni s\tenrm 1\teni ; d\tenrm 1)\teni 
+float \tensy ^^C \teni s\tenrm 1\teni ; \tensy ^^C\teni d\tenrm 1; []$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm ^^M (ligature fl)
+.\tenrm o
+.\tenrm a
+.\tenrm t
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.126             As += A_
+                          (i, j) * s0[j];
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.128         }
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.132     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.136 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.180     extern double sparse_
+                               prime();
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.181 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.182     p1 = &
+                p[1];
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.190 ...= lambda * (sum - Atx[i]) + bos * sparse_
+                                                  prime((double) p1[i] / sig...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.191     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.193 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.194 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[1]
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.198 	if (g_
+             sparsity_func== SP_LOG) {
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.210 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (18.93718pt too wide) in paragraph at lines 195--210
+[]\tenrm double sparse(x) do-uble x;  if (g$[]\teni parsity[]unc \tenrm == \ten
+i SP[]OG\tenrm )[]\teni elseif\tenrm (\teni g[]parsity[]unc \tenrm ==|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm o
+.\tenrm u
+.\tenrm b
+.etc.
+
+
+Overfull \hbox (839.57622pt too wide) in paragraph at lines 195--210
+\teni SP[]UBER[]\tenrm 1)[]\teni elseif\tenrm (\teni g[]parsity[]unc \tenrm ==|
+
+
+\hbox(8.14003+2.86108)x469.75499
+.\teni S
+.\kern0.57637
+.\teni P
+.\hbox(4.78334+0.0)x7.58473, shifted 1.49998
+..\seveni H
+.\teni U
+.etc.
+
+! Undefined control sequence.
+l.211 ...ity function is not properly specified!\n
+                                                  ");
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.215 double sparse_
+                    prime(x)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.230 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+<to be read again> 
+                   \par 
+l.230 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1247.05061pt too wide) in paragraph at lines 215--230
+[]\tenrm double sparse$[]\teni rime\tenrm (\teni x\tenrm )\teni doublex\tenrm ;
+ []$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm d
+.\tenrm o
+.\tenrm u
+.\tenrm b
+.etc.
+
+! Undefined control sequence.
+l.231 ...ity function is not properly specified!\n
+                                                  ");
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.236 void iter_
+                do()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.239 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.241 #
+       include <nrutil.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.254     init_
+               global_arrays();
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.256 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.259             fprintf(stderr, "\r
+                                     %d", n + 1);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.264             x[l] = X_
+                           (l, n);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.265         }
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.266 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.272                 sum += A_
+                               (l, m) * x[l];
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.273             }
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.275 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.277             p[m + 1] = Sin_
+                                 (m, n);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.278         }
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.279 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.282         frprmn(p, M, (float) tol, &
+                                         niter, &fret, init_f1dim, f1dim, df...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.282         frprmn(p, M, (float) tol, &niter, &
+                                                 fret, init_f1dim, f1dim, df...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.282 ...n(p, M, (float) tol, &niter, &fret, init_
+                                                  f1dim, f1dim, dfunc);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.283 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.289             fprintf(stdout, "\nfret
+                                         =%f  niters=%d  fcount=%d  gcount=%...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.295             Sout_
+                       (m, n) = p[m + 1];
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.296         }
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.297     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.298 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.299     free_
+               global_arrays();
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.301 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.302 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.320     A = mxGetPr(A_
+                        IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.327 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (107.24825pt too wide) in paragraph at lines 320--327
+[]\tenrm A = mxGetPr(A$[]\teni N\tenrm ); \teni X \tenrm = \teni mxGetPr\tenrm 
+(\teni X[]N\tenrm ); \teni Sin \tenrm = \teni mxGetPr\tenrm (\teni S[]N\tenrm )
+; \teni g[]parsity[]unc \tenrm = \teni mxGetScalar\tenrm (\teni SPARSITY[]N\ten
+rm ); \teni lambda \tenrm =|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm A
+.\glue 3.33333 plus 1.66498 minus 1.11221
+.\tenrm =
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+! Undefined control sequence.
+l.328 	/*fprintf(stderr,"--------------\n
+                                         ");
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.329 	fprintf(stderr,"g_
+                         sparsity_func = %d\n", g_sparsity_func);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.334 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (48.89839pt too wide) in paragraph at lines 328--334
+[]\tenrm /*fprintf(stderr,"--------------"); fprintf(stderr,"g$[]\teni parsity[
+]unc \tenrm = \teni fprintf\tenrm (\teni stderr; \tenrm "\teni lambda \tenrm = 
+\teni fprintf\tenrm (\teni stderr; \tenrm "\teni beta \tenrm =|
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm *
+.\tenrm f
+.\tenrm p
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.339         tol = mxGetScalar(TOL_
+                                    IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.340     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.341 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.345         maxiter = (int) mxGetScalar(MAXITER_
+                                                  IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.346     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.347 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.351         outflag = (int) mxGetScalar(OUTFLAG_
+                                                  IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.352     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.353 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.357         numflag = (int) mxGetScalar(NUMFLAG_
+                                                  IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.358     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.359 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.360 	/* This is only for sparsity type = SP_
+                                              HUBER_L1, SP_EPS_L1 */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.366 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (146.10571pt too wide) in paragraph at lines 360--366
+[]\tenrm /* This is only for spar-sity type = SP$[]\teni UBER[]\tenrm 1\teni ; 
+SP[]PS[]\tenrm 1 \tensy ^^C \teni =if\tenrm (\teni nrhs < \tenrm 12)[]\teni els
+e[]$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm *
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm T
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.368     L = (int) mxGetM(A_
+                             IN);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.371 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.374     S_
+            OUT = mxCreateDoubleMatrix(M, npats, mxREAL);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.376 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.378         NITS_
+                   OUT = mxCreateDoubleMatrix(1, 1, mxREAL);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.379     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.386 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (181.10425pt too wide) in paragraph at lines 377--386
+[]\tenrm if (nlhs > 1)  NITS$[]\teni UT \tenrm = \teni mxCreateDoubleMatrix\ten
+rm (1\teni ; \tenrm 1\teni ; mxREAL\tenrm ); \teni if\tenrm (\teni nlhs > \tenr
+m 2)[]\teni if\tenrm (\teni nlhs >|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm (
+.etc.
+
+! Misplaced alignment tab character &.
+l.389     cgf(Sout, &
+                     nits, &nf, &ng, Sin, X, npats, tol, maxiter, numflag);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.389     cgf(Sout, &nits, &
+                            nf, &ng, Sin, X, npats, tol, maxiter, numflag);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.389     cgf(Sout, &nits, &nf, &
+                                 ng, Sin, X, npats, tol, maxiter, numflag);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.392         *(mxGetPr(NITS_
+                             OUT)) = nits;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.393     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.400 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.401 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.402 #
+       undef A_
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.402 #undef A_
+               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   ##
+l.403 #
+       undef X_
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.403 #
+       undef X_
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing { inserted.
+<to be read again> 
+                   ##
+l.404 #
+       undef Sout_
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.404 #
+       undef Sout_
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing { inserted.
+<to be read again> 
+                   ##
+l.405 #
+       undef Sin_
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.405 #
+       undef Sin_
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing { inserted.
+<to be read again> 
+                   ##
+l.406 #
+       undef AtA_
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.406 #
+       undef AtA_
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+)
+! Emergency stop.
+<*> cgf_sc.c -o cgf_sc2
+                       
+*** (job aborted, no legal \end found)
+
+Output written on cgf_sc.dvi (1 page, 6524 bytes).

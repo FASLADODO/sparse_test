@@ -1,0 +1,24 @@
+About the source code:
+1. This is a modified version of the feature sign algorithm, for solving a 2-step least square minimization with l1 regularization.
+
+About the copy right:
+All of the included files except the following ones
+1. l1ls_featuresign2.m
+2. sparse_learning.m
+3. tsavefigures.m
+4. log2file.m
+5. sparse_test.m
+6. compute_err.m(*), this function is a part from ksvdbox/ksvd.m, source code of ksvd can be found at http://www.cs.technion.ac.il/~elad/software/
+
+are a copy from 'Honglak Lee <hllee@cs.stanford.edu>', the detail of the original feature sign algorithm is described in the following paper
+% 'Efficient Sparse Codig Algorithms', Honglak Lee, Alexis Battle, Rajat Raina, Andrew Y. Ng, 
+% Advances in Neural Information Processing Systems (NIPS) 19, 2007%
+% Written by Honglak Lee <hllee@cs.stanford.edu>
+% Copyright 2007 by Honglak Lee, Alexis Battle, Rajat Raina, and Andrew Y. Ng
+Another archive of the original feature sign algorithm source code can be found at: http://www.eecs.umich.edu/~honglak/softwares/nips06-sparsecoding.htm
+
+About the usage:
+1. 2006.csv is the probe trace file for testing sparse representation on trace data
+2. use sparse_test.m to excute the sparse feature sign for probe trace data
+3. user the demo_fast_sc.m to show the original algorithm (more input data needed and can be download from http://www.eecs.umich.edu/~honglak/softwares/nips06-sparsecoding.htm)
+
