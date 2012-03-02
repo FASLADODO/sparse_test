@@ -292,12 +292,6 @@ function [loss] = dictloss(matrix, indx, cur_vect, S)
     
     loss = sum(sum((matrix - repmat(cur_vect, 1, size(matrix,2))).^2*S(:,indx)));
 
-    %loss = 0;
-    %for jj = 1:size(matrix, 2)
-    %    if indx ~= jj
-    %        loss = loss + S(indx, jj)*(norm(cur_vect - matrix(:,jj)))^2;
-    %    end
-    %end
 return;
 
 
@@ -341,7 +335,7 @@ lsearch=0;
 
 a= 0.5*sum((A(:, act_indx1)*(x_new- x2)).^2);
 b= (x2'*AtA2*(x_new- x2) - (x_new- x2)'*Aty(act_indx1));
-fobj_lsearch = gamma*sum(abs(x2));
+fobj_lsearch = gamma*sum(abs(x2)) + dictloss(xmatrix(act_indx1, :), cur_indx, x2, S);
 
 
 [sort_lsearch, idx_lsearch] = sort([progress',1]);

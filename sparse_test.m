@@ -7,13 +7,22 @@ end
 traindim = 1500;
 testdim = 500;
 tpoints = (1:traindim:16000);
-probe_range = 1:100:1000;
-objs = cell(1, 5);
+probe_range = 1:100:101;
+
+
+%%{
+dictsizes = [100];
+cofs_gammas = [0.01, 0.1];
+%dict_gammas = [0.01, 0.1];
+lambdas = [0.01, 0.1];
+
+objs = cell(2, size(probe_range, 2)-1, size(tpoints, 2)-2, size(cofs_gammas,2), size(lambdas,2), size(dictsizes,2));
+
 
 %train_probe = (1:100);
 %test_probe = (1:100);
 %%{
-for itest = 1:5
+for itest = 1:1
     
 for kk = 1:(size(probe_range, 2)-1)
     train_probe = (probe_range(kk):(probe_range(kk+1)-1));
@@ -37,15 +46,10 @@ for kk = 1:(size(probe_range, 2)-1)
         test(test==1)=0;
         test(test==-1)=1;
 
-        %%{
-        dictsizes = [100];
-        gammas = [0.01, 0.1];
-        lambdas = [0.01, 0.1];
-
-        for igamma=1:size(gammas, 2)
+        for igamma=1:size(cofs_gammas, 2)
             for ilambda=1:size(lambdas, 2)
                 for idict=1:size(dictsizes, 2)
-                    clearvars -except dat train test dictsizes gammas lambdas igamma ilambda idict train_probe train_time test_probe test_time tpoints traindim testdim itest;
+                    %clearvars -except dat train test dictsizes gammas lambdas igamma ilambda idict train_probe train_time test_probe test_time tpoints traindim testdim itest objs probe_range kk jj;
 
                     dictsize = dictsizes(idict);
                     randdict = train(:, rand_int(1,size(train,2),dictsize,1,1,0));
@@ -58,9 +62,9 @@ for kk = 1:(size(probe_range, 2)-1)
                     params.train = train;
 
                     params.initDict = randdict;
-                    params.gamma = gammas(igamma);
+                    params.gamma = cofs_gammas(igamma);
                     params.lambda = lambdas(ilambda);
-                    params.iternum = 10;
+                    params.iternum = 2;
                     params.figure = 1;
                     params.epsilon = 0.1;
 
@@ -68,14 +72,15 @@ for kk = 1:(size(probe_range, 2)-1)
                     train_timestr = num2str([train_time(1), train_time(size(train_time,2))]);
                     test_timestr = num2str([test_time(1), test_time(size(test_time,2))]);
 
-                    outpath = sprintf('tround-%d_dict-%d_gamma-%f_lambda-%f_probe-[%s]_train-[%s]_test-[%s]', itest, dictsizes(idict), gammas(igamma), lambdas(ilambda), probestr, train_timestr, test_timestr);
+                    outpath = sprintf('tround-%d_dict-%d_gamma-%f_lambda-%f_probe-[%s]_train-[%s]_test-[%s]', itest, dictsizes(idict), cofs_gammas(igamma), lambdas(ilambda), probestr, train_timestr, test_timestr);
                     params.outpath = outpath;
 
+                    
                     [outD, outX, obj_func] = sparse_learning(params);
                     
-                    objs{itest} = {params, obj_func, outD, outX};
+                    objs{itest, kk, jj, igamma, ilambda, idict} = {params, obj_func, outD, outX};
 
-                    save('result.mat', objs);
+                    save('result.mat', 'objs');
                     tsavefigures(outpath, 1);
 
                 end
@@ -113,3 +118,5 @@ tsavefigures(outpath, 1);
 
 
 %}
+
+exit;

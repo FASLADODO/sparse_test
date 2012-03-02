@@ -1,4 +1,4 @@
-function [ outD, outX, obj_func ] = sparse_learning( params )
+function [ outD, outX, obj1 ] = sparse_learning( params )
 %SPARSE_LEARNING Summary of this function goes here
 %   Detailed explanation goes here
 % params.train, training data with vars as rows and timestamp as columns

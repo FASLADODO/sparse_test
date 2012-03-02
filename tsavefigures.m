@@ -1,12 +1,13 @@
-function tsavefigures(path, extra_info)
+function tsavefigures(path, num_figs, extra_info)
 % this script is used to save the figure[1-5] into pdf files
 % path, figure storage path
+% numfigs, number of figures to be stored
 % extra_info, extra infomation like xlabel, title etc needed
 
     %%
 if  exist(path, 'dir') || mkdir(path)
     
-    num_figs = 7;
+    %num_figs = 8;
     for i=1:num_figs
         if ishandle(i) %if current figure i exists
             figure(i);
@@ -19,7 +20,14 @@ if  exist(path, 'dir') || mkdir(path)
             %position = [left_margin, bottom_margin, fig_width, fig_height];
             position = [0.05, 0.05, 7.9, 5.9];
             set(gcf, 'PaperPosition', position);
-            outfile = sprintf('%s/figure_normalized_dict_%d', path, i);
+            xxtitle = get(get(gca, 'title'), 'string');
+            xxtitle = sprintf('%s',xxtitle);
+            
+            %outfile = sprintf('%s/figure%s%d', path, xxtitle, i);
+            %disp(outfile);
+            
+            outfile = sprintf('%s/figure_result_%d', path, i);
+            disp(outfile);
             if extra_info
                 if ismember(i, [3,5])
                     xlabel('time');
@@ -41,7 +49,7 @@ if  exist(path, 'dir') || mkdir(path)
 
             print(gcf, '-dpdf', outfile);
             saveas(gcf, outfile, 'fig');
-            clf(gcf);
+            %clf(gcf);
         end
 
     end

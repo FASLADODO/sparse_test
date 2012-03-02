@@ -147,6 +147,7 @@ while t < pars.num_trials
         % learn coefficients (conjugate gradient or the feature sign)
         if t==1 || ~pars.reuse_coeff
             if strcmp(pars.sparsity_func, 'L1') || strcmp(pars.sparsity_func, 'LARS') || strcmp(pars.sparsity_func, 'FS')
+                disp(pars.beta/pars.sigma*pars.noise_var);
                 S= l1ls_featuresign(B, Xb, pars.beta/pars.sigma*pars.noise_var);
             else
                 S= cgf_fitS_sc2(B, Xb, pars.sparsity_func, pars.noise_var, pars.beta, pars.epsilon, pars.sigma, pars.tol, false, false, false);
