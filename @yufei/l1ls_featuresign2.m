@@ -19,7 +19,7 @@ function [Dout, Objout] = l1ls_featuresign2 (params)
 % initialize the parameters
 A = params.X;
 Y = params.Y;
-gamma = params.dictgamma;
+gamma = params.gamma;
 Xinit = params.Dinit;
 S = params.S;
 epsilon = params.epsilon;
@@ -40,7 +40,7 @@ AtY = A'*Y;
 
 % rankA = rank(AtA);
 % constrain the max selected number of non-zeros
-rankA = min(size(A,1)-5, size(A,2)-5);
+rankA = min(size(A,1)-10, size(A,2)-10);
 %rankA = 3;
 
 %%%%
@@ -269,7 +269,7 @@ function [grad] = matrxi_grad(matrix, indx, similarity)
     grad = zeros(size(matrix,1),1);
     for i = 1:size(matrix, 2)
         if i ~= indx
-            grad = grad + similarity(indx, i)*(matrix(:, indx) - matrix(:, i));
+            grad = grad + 2*similarity(indx, i)*(matrix(:, indx) - matrix(:, i));
         end
     end
 return;
@@ -292,6 +292,12 @@ function [loss] = dictloss(matrix, indx, cur_vect, S)
     
     loss = sum(sum((matrix - repmat(cur_vect, 1, size(matrix,2))).^2*S(:,indx)));
 
+    %loss = 0;
+    %for jj = 1:size(matrix, 2)
+    %    if indx ~= jj
+    %        loss = loss + S(indx, jj)*(norm(cur_vect - matrix(:,jj)))^2;
+    %    end
+    %end
 return;
 
 
@@ -311,7 +317,7 @@ theta2 = theta(act_indx1);
 %%%%%%%
 % compute the x_new below
 %%%%%%%
-x_new = (AtA2 + lambda*(sum(S(cur_indx,:)))*speye(size(AtA2,1))) \ ( Aty(act_indx1) + lambda*sumvect(xmatrix(act_indx1,:), cur_indx, S) - gamma.*theta2 ) ;
+x_new = (AtA2 + lambda*(sum(S(cur_indx,:)))*speye(size(AtA2,1))) \ ( Aty(act_indx1) + lambda*sumvect(xmatrix(act_indx1,:), cur_indx, S) - (gamma/2).*theta2 ) ;
 % x_new = AtA2 \ ( Aty(act_indx1) - gamma.*theta2 ); % RR, get the accurate solution of quadratic problem
 % opts.POSDEF=true; opts.SYM=true; % RR
 % x_new = linsolve(AtA2, ( Aty(act_indx1) - gamma.*theta2 ), opts); % RR
@@ -335,7 +341,7 @@ lsearch=0;
 
 a= 0.5*sum((A(:, act_indx1)*(x_new- x2)).^2);
 b= (x2'*AtA2*(x_new- x2) - (x_new- x2)'*Aty(act_indx1));
-fobj_lsearch = gamma*sum(abs(x2)) + dictloss(xmatrix(act_indx1, :), cur_indx, x2, S);
+fobj_lsearch = gamma*sum(abs(x2))+ dictloss(xmatrix(act_indx1,:), cur_indx, x2, S);
 
 
 [sort_lsearch, idx_lsearch] = sort([progress',1]);

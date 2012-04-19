@@ -1,0 +1,94 @@
+function [res_matrix] = fs_res_stat(mcell)
+% mcell, the result cell of 2fs experiments, with the structure of {params, obj_funcs, outD, outX}
+% res_matrix, stat the TP, TN, FP, FN of the result cell, with a format {strkey, TP, TN, FP, FN}
+
+%step1, for each cell element, get its params, params.test and outD, compute the testX
+%step2, from testX, with the test matrix, compute the TP, TN, FP, FN, aggregate them into elm_res
+%step3, from elm_res, compute accuracy, roc, sensitivity, precision, mcc etc, in a seperate function
+
+res_matrix = cell(1, 5);
+index = 1;
+
+for it = 1:size(mcell, 1) %itest iteration
+	for iprobe = 1:size(mcell, 2) %probe iteration
+		for itpoint = 1:size(mcell, 3) %time points iteration
+			for igamma = 1:size(mcell, 4) %gamma iteration
+				for idictgamma = 1:size(mcell, 5) %dict gamma
+					for ilambda =1:size(mcell, 6) %lambda
+						for idict = 1:size(mcell, 7) %dict size
+							if ~isempty(mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict})
+								test = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.test;
+								probe_begin = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.probe(1);
+								probe_end = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.probe(end);
+								time_begin = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.time(1);
+								time_end = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.time(end);
+								gamma = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.gamma;
+								dictgamma = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.dictgamma;
+								lambda = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.lambda;
+								dictsize = size(mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.initDict, 2);
+								outD = 	mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{3};
+                                
+                                if ~hasField(mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}, 'testX') %check whether the testX already exists
+                                    testX = l1ls_featuresign(outD, test, gamma);
+                                else
+                                    testX = mcell{it, iprobe, itpoint, igamma, idictgamma, ilambda, idict}{1}.testX;
+                                end
+                                
+								[TP, TN, FP, FN] = elm_extract(test, outD, testX);
+								strkey = sprintf('pb1=%d,pb2=%d,t1=%d,t2=%d,ga=%g,dga=%g,lbd=%g,dsize=%d', probe_begin, probe_end, time_begin, time_end, gamma, dictgamma, lambda, dictsize);
+								res_matrix(index, :) = {strkey, TP, TN, FP, FN};
+								index = index + 1;
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+
+% sub function
+function [TP, TN, FP, FN] = elm_extract(test, tD, tX)
+% extract the TP, TN, FP, FN from result matrix
+% test, test matrix
+% tD, dict learned for test
+% tX, cofs learned from tD
+threshold = 0.5;
+newTest = tD * tX;
+newTest(newTest > threshold) = 1;
+newTest(newTest <= threshold) = 0;
+
+TP = 0;
+TN = 0;
+FP = 0;
+FN = 0;
+
+if size(newTest) ~= size(test)
+	return;
+end
+
+for idx = 1:numel(newTest)
+	nelm = newTest(idx);
+	oelm = test(idx);
+	if oelm == 0
+		if nelm == 1
+			FP = FP + 1;
+		else
+			TN = TN + 1;
+		end
+	else
+		if nelm == 1
+			TP = TP + 1;
+		else
+			FN = FN + 1;
+		end
+	end
+end
+
+
+end
+
+end
+
+

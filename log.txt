@@ -1,0 +1,379 @@
+27-Feb-2012 13:22:26
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.010000, lambda: 0.010000, iternum: 10, probe_range: 1  100, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+27-Feb-2012 16:08:55
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.010000, lambda: 0.010000, iternum: 10, probe_range: 1  100, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.009999
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.291886, obj is: 4.048615
+current test err(rmse): 0.146990, ftobj: 0.000000
+normalized rmse on the train set: 0.080374
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.154850, obj is: 1.059127
+current test err(rmse): 0.133260, ftobj: 0.000000
+normalized rmse on the train set: 0.106896
+sparse coding...
+obj for step 1 feature sign: 0.070088
+dictionary updating...
+27-Feb-2012 16:32:26
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.010000, lambda: 0.010000, iternum: 2, probe_range: 1  100, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.009999
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.297892, obj is: 4.753636
+current test err(rmse): 0.148922, ftobj: 5.467148
+normalized rmse on the train set: 0.081486
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.350792, obj is: 1.057743
+current test err(rmse): 0.133663, ftobj: 0.000000
+normalized rmse on the train set: 0.084143
+27-Feb-2012 16:56:35
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.010000, lambda: 0.100000, iternum: 2, probe_range: 1  100, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+18-Apr-2012 12:45:27
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:14
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:18
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:23
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1501  3000, test_time: 3001  3500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:28
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1501  3000, test_time: 3001  3500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:33
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 3001  4500, test_time: 4501  5000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:38
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 3001  4500, test_time: 4501  5000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:43
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 4501  6000, test_time: 6001  6500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:48
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 100, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 4501  6000, test_time: 6001  6500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+current test err(rmse): 0.000000, ftobj: 0.000000
+normalized rmse on the train set: 0.000000
+18-Apr-2012 12:50:53
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 6001  7500, test_time: 7501  8000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.000000, obj is: 0.000000
+18-Apr-2012 12:52:02
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.516571, obj is: 0.000000
+current test err(rmse): 0.278859, ftobj: 0.000000
+normalized rmse on the train set: 0.439101
+sparse coding...
+obj for step 1 feature sign: 0.988231
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.155797, obj is: 0.000000
+current test err(rmse): 0.266702, ftobj: 0.000000
+normalized rmse on the train set: 0.249702
+18-Apr-2012 13:04:05
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1501  3000, test_time: 3001  3500
+sparse coding...
+obj for step 1 feature sign: 0.009999
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.584500, obj is: 0.000000
+current test err(rmse): 0.056041, ftobj: 0.226616
+normalized rmse on the train set: 0.512832
+sparse coding...
+obj for step 1 feature sign: 0.226616
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.178480, obj is: 0.000000
+current test err(rmse): 0.032505, ftobj: 0.127790
+normalized rmse on the train set: 0.287979
+18-Apr-2012 13:21:36
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 3001  4500, test_time: 4501  5000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.599871, obj is: 0.000000
+current test err(rmse): 0.373525, ftobj: 8.014702
+normalized rmse on the train set: 0.403328
+sparse coding...
+obj for step 1 feature sign: 4.727026
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.203964, obj is: 0.000000
+current test err(rmse): 0.331406, ftobj: 6.739805
+normalized rmse on the train set: 0.276965
+18-Apr-2012 13:36:03
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 4501  6000, test_time: 6001  6500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.648390, obj is: 0.000000
+current test err(rmse): 0.300352, ftobj: 0.000000
+normalized rmse on the train set: 0.705635
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.173246, obj is: 0.000000
+current test err(rmse): 0.297553, ftobj: 0.000000
+normalized rmse on the train set: 0.277650
+18-Apr-2012 13:37:32
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 6001  7500, test_time: 7501  8000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.586429, obj is: 0.000000
+current test err(rmse): 0.321074, ftobj: 0.000000
+normalized rmse on the train set: 0.611145
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.222693, obj is: 0.000000
+current test err(rmse): 0.321122, ftobj: 0.000000
+normalized rmse on the train set: 0.374874
+18-Apr-2012 13:39:04
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 7501  9000, test_time: 9001  9500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.505625, obj is: 0.000000
+current test err(rmse): 0.305338, ftobj: 0.000000
+normalized rmse on the train set: 0.467702
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.245612, obj is: 0.000000
+current test err(rmse): 0.303524, ftobj: 0.000000
+normalized rmse on the train set: 0.426371
+18-Apr-2012 13:40:36
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 9001  10500, test_time: 10501  11000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.497222, obj is: 0.000000
+current test err(rmse): 0.327785, ftobj: 0.000000
+normalized rmse on the train set: 0.468950
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.206219, obj is: 0.000000
+current test err(rmse): 0.323126, ftobj: 0.000000
+normalized rmse on the train set: 0.343553
+18-Apr-2012 13:42:11
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 10501  12000, test_time: 12001  12500
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.560640, obj is: 0.000000
+current test err(rmse): 0.344589, ftobj: 0.000000
+normalized rmse on the train set: 0.522408
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.193569, obj is: 0.000000
+current test err(rmse): 0.333040, ftobj: 0.000000
+normalized rmse on the train set: 0.301692
+18-Apr-2012 13:45:05
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 12001  13500, test_time: 13501  14000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.651967, obj is: 0.000000
+current test err(rmse): 0.321590, ftobj: 0.000000
+normalized rmse on the train set: 0.716293
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.182275, obj is: 0.000000
+current test err(rmse): 0.319858, ftobj: 0.000000
+normalized rmse on the train set: 0.290852
+18-Apr-2012 15:28:28
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 10, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+18-Apr-2012 16:18:41
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.01, lambda: 0.01, iternum: 10, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+19-Apr-2012 11:39:49
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 70, gamma: 0.01, dictgamma: 0.1, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.510286, obj is: 0.000000
+current test err(rmse): 0.203654, ftobj: 3.509596
+sparse coding...
+obj for step 1 feature sign: 0.287934
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.092534, obj is: 0.000000
+current test err(rmse): 0.193586, ftobj: 3.250597
+19-Apr-2012 12:33:00
+%%%%%%%%%%%%%%%%%%%%
+params
+dictsize: 50, gamma: 0.01, dictgamma: 0.1, lambda: 0.01, iternum: 2, probe_range: 1  93, time_range: 1  1500, test_time: 1501  2000
+sparse coding...
+obj for step 1 feature sign: 0.000000
+dictionary updating...
+iteration: 1.000000, learned rmse on train_set is: 0.494625, obj is: 0.000000
+current test err(rmse): 0.258033, ftobj: 5.751464
+sparse coding...
+obj for step 1 feature sign: 0.667644
+dictionary updating...
+iteration: 2.000000, learned rmse on train_set is: 0.141439, obj is: 0.000000
+current test err(rmse): 0.259194, ftobj: 6.044031

@@ -14,6 +14,7 @@ function [Xout, fobj] = l1ls_featuresign (A, Y, gamma, Xinit)
 % Copyright 2007 by Honglak Lee, Alexis Battle, Rajat Raina, and Andrew Y. Ng
 
 warning('off', 'MATLAB:divideByZero');
+warning off all;
 
 use_Xinit= false;
 if exist('Xinit', 'var')
@@ -25,7 +26,7 @@ AtA = A'*A;
 AtY = A'*Y;
 
 % rankA = rank(AtA);
-rankA = min(size(A,1)-10, size(A,2)-10);
+rankA = min(size(A,1)-5, size(A,2)-5);
 
 for i=1:size(Y,2)
     %print sth when 100 samples reached
@@ -56,7 +57,7 @@ function [x, fobj] = ls_featuresign_sub (A, y, AtA, Aty, gamma, xinit)
 
 [L,M] = size(A); % return dim of A
 
-rankA = min(size(A,1)-10, size(A,2)-10); % the max number of nonzero cofficients
+rankA = min(size(A,1), size(A,2)); % the max number of nonzero cofficients
 %rankA =2;
 %%%%%%
 % Step 1: Initialize
@@ -197,7 +198,8 @@ theta2 = theta(act_indx1);
 % change the x_new below
 %%%%%%%
 
-x_new = AtA2 \ ( Aty(act_indx1) - gamma.*theta2 ); % RR, get the accurate solution of quadratic problem
+%x_new = AtA2 \ ( Aty(act_indx1) - gamma.*theta2 ); % RR, get the accurate solution of quadratic problem
+x_new = pinv(AtA2)*( Aty(act_indx1) - gamma.*theta2 );
 % opts.POSDEF=true; opts.SYM=true; % RR
 % x_new = linsolve(AtA2, ( Aty(act_indx1) - gamma.*theta2 ), opts); % RR
 optimality1= false;

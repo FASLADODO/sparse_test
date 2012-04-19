@@ -1,4 +1,4 @@
-function [ outD, outX, obj1, outTestX ] = sparse_learning( params )
+function [ outD, outX, obj1 ] = sparse_learning( params )
 %SPARSE_LEARNING Summary of this function goes here
 %   Detailed explanation goes here
 % params.train, training data with vars as rows and timestamp as columns
@@ -21,7 +21,7 @@ log2file(logfile, 'params');
 probe_range = [params.probe(1), params.probe(size(params.probe, 2))];
 time_range = [params.time(1), params.time(size(params.time, 2))];
 test_time = [params.test_time(1), params.test_time(size(params.test_time, 2))];
-pstr = sprintf('dictsize: %d, gamma: %g, dictgamma: %g, lambda: %g, iternum: %d, probe_range: %s, time_range: %s, test_time: %s', size(params.initDict,2), params.gamma, params.dictgamma, params.lambda, params.iternum, num2str(probe_range), num2str(time_range), num2str(test_time));
+pstr = sprintf('dictsize: %d, gamma: %f, lambda: %f, iternum: %d, probe_range: %s, time_range: %s, test_time: %s', size(params.initDict,2), params.gamma, params.lambda, params.iternum, num2str(probe_range), num2str(time_range), num2str(test_time));
 log2file(logfile, pstr);
 
 Y = params.train;
@@ -30,7 +30,6 @@ gamma = params.gamma;
 lambda = params.lambda;
 iternum = params.iternum;
 test = params.test;
-dict_gamma = params.dictgamma;
 
 %optional parameters
 display_figure = params.figure;
@@ -41,7 +40,7 @@ obj1 = zeros(4,params.iternum);
 
 
 %step 1, learn the similarity matrix, euclidean or hamming
-simatrix = squareform(pdist(Y, 'hamming'));
+simatrix = squareform(pdist((Y+eps), 'cosine'));
 
 simatrix = (ones(size(simatrix))-eye(size(simatrix))) - simatrix;
 
@@ -56,7 +55,7 @@ for iter = 1:iternum
     
     tparams.Y = Y';
     tparams.X = xout';
-    tparams.dictgamma = dict_gamma;
+    tparams.gamma = gamma;
     tparams.Dinit = D';
     tparams.S = simatrix;
     tparams.lambda = lambda;
@@ -84,7 +83,7 @@ for iter = 1:iternum
     disp(outstr);
     %rmse = err;
     
-    [outTestX, ftobj, terr] = test_dict(outD, test, gamma);
+    [testX, ftobj, terr] = test_dict(outD, test, gamma);
     obj1(4, iter) = terr;
     
     % draw the figure of tmp results

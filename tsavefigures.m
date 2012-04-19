@@ -1,5 +1,6 @@
 function tsavefigures(path, num_figs, extra_info)
-% this script is used to save the figure[1-5] into pdf files
+% tsavefigures(path, num_figs, extra_info)
+% this script is used to save the figure into pdf files
 % path, figure storage path
 % numfigs, number of figures to be stored
 % extra_info, extra infomation like xlabel, title etc needed
