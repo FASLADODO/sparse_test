@@ -51,7 +51,7 @@ rankA = min(size(A,1)-5, size(A,2)-5);
 next_iteration = 1;
 percentage = 0.001; % percentage to control the number of violated columns in one iteration
 violated_set = ones(1, size(Xinit, 2));
-max_local_iter = 2;
+max_local_iter = 5;
 
 while next_iteration
    outstr=sprintf('step2 feature sign iteration for new loop, atoms updated: %d', sum(violated_set));
@@ -191,6 +191,7 @@ for iter=1:ITERMAX
     else
         optimality0= true;
         if optimality1
+	    %disp('line 194, break, optimality1 is true');
             break;
         end
     end
@@ -198,7 +199,8 @@ for iter=1:ITERMAX
 
     if length(act_indx1)>rankA
         warning('sparsity penalty is too small: too many coefficients are activated');
-        return;
+	%!!!!!! disp('sparsity penalty is too small: too many coefficients are activated');
+        %return;
     end
 
     if isempty(act_indx1) %length(act_indx1)==0
@@ -214,6 +216,7 @@ for iter=1:ITERMAX
 
         if k>ITERMAX
             warning('Maximum number of iteration reached. The solution may not be optimal');
+            %disp('Maximum number of iteration reached. The solution may not be optimal');
             % save(fname_debug, 'A', 'y', 'gamma', 'xinit');
             return;
         end
@@ -233,6 +236,7 @@ for iter=1:ITERMAX
         % Step 4: check optimality condition 1
         %%%%%%
         if optimality1 
+	    %disp('line 239. break, optimality1 is true');
             break; 
         end;
         if lsearch >0 %condition (a) is not satisfied
@@ -327,6 +331,8 @@ end
 % do line search: x -> x_new
 progress = (0 - x2)./(x_new - x2);
 lsearch=0;
+%disp('start line search!');
+
 %a= 0.5*sum((A2*(x_new- x2)).^2);
 
 %%%%%%%

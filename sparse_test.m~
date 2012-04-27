@@ -1,6 +1,6 @@
 %this script is used to test the sparse feature sign algorithm
 
-load('nagios.freq-300.mat');
+%load('nagios.mat');
 %%read the test data file
 if ~exist('nagios_trim','var')
     return;
@@ -8,17 +8,17 @@ if ~exist('nagios_trim','var')
 end
 dat = nagios_trim;
 
-traindim = 2000;
+traindim = 1500;
 testdim = 500;
-tpoints = (1:traindim:51840);
+tpoints = (1:traindim:4600);
 probe_range = 1:93:94;
 test_round = 1;
 
 %%{
 dictsizes = [50];
 cofs_gammas = [0.01];
-dict_gammas = [0.1];
-lambdas = [0.1];
+dict_gammas = [0.01];
+lambdas = [0.01];
 
 objs = cell(test_round, size(probe_range, 2)-1, size(tpoints, 2)-2, size(cofs_gammas,2), size(dict_gammas,2), size(lambdas,2), size(dictsizes,2));
 
@@ -60,16 +60,11 @@ for kk = 1:(size(probe_range, 2)-1)
                         %use the unique columns for init dictionary
                         train_uniq = unique(train', 'rows');
                         train_uniq = train_uniq';
+                        size();
+                        randdict = 
                         
-                        if (dictsize > size(train_uniq, 2))
-                            dif_size = dictsize - size(train_uniq, 2);
-                            randdict = train(:, rand_int(1,size(train,2),dif_size,1,1,0));
-                            randdict = [randdict, train_uniq];
-                            
-                        else
-                            randdict = train_uniq(:, rand_int(1, size(train_uniq,2), dictsize, 1, 1, 0));
+                        randdict = train(:, rand_int(1,size(train,2),dictsize,1,1,0));
                         
-                        end
                         
                         params.probe = train_probe;
                         params.time = train_time;

@@ -19,4 +19,7 @@ end
 nmatrix = rmatrix;
 nmatrix(logical(ridxs),:) = [];
 
+nmatrix(nmatrix>1)=1;
+nmatrix(nmatrix<1)=0;
+
 end
